@@ -1,0 +1,292 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 debug pnpm:package-json: 
+    initial: 
+      name: "ui-tool-kit"
+      version: "1.0.0"
+      description: ">"
+      author: ""
+      license: "MIT"
+      repository: 
+        type: "git"
+        url: "/ui-tool-kit"
+      main: "dist/index.js"
+      module: "dist/index.es.js"
+      jsnext:main: "dist/index.es.js"
+      engines: 
+        node: ">=8"
+        npm: ">=5"
+      scripts: 
+        test: "cross-env CI=1 react-scripts-ts test --env=jsdom"
+        test:watch: "react-scripts-ts test --env=jsdom"
+        build: "rollup -c"
+        start: "rollup -c -w"
+        prepare: "npm run build"
+        predeploy: "cd example && npm install && npm run build"
+        deploy: "gh-pages -d example/build"
+      dependencies: 
+        react-page-layout: "^0.9.8"
+        react-router-dom: "^4.3.1"
+      peerDependencies: 
+        prop-types: "^15.5.4"
+        react: "^15.0.0 || ^16.0.0"
+        react-dom: "^15.0.0 || ^16.0.0"
+      devDependencies: 
+        @svgr/rollup: "^2.4.1"
+        @types/jest: "^23.1.5"
+        @types/react: "^16.3.13"
+        @types/react-dom: "^16.0.5"
+        @types/react-router-dom: "^4.3.1"
+        babel-core: "^6.26.3"
+        babel-runtime: "^6.26.0"
+        cross-env: "^5.1.4"
+        gh-pages: "^1.2.0"
+        react: "^16.4.1"
+        react-dom: "^16.4.1"
+        react-scripts-ts: "^2.16.0"
+        rollup: "^0.62.0"
+        rollup-plugin-babel: "^3.0.7"
+        rollup-plugin-commonjs: "^9.1.3"
+        rollup-plugin-node-resolve: "^3.3.0"
+        rollup-plugin-peer-deps-external: "^2.2.0"
+        rollup-plugin-postcss: "^1.6.2"
+        rollup-plugin-typescript2: "^0.17.0"
+        rollup-plugin-url: "^1.4.0"
+        typescript: "^2.8.3"
+      files: 
+        - "dist"
+      readme: "# ui-tool-kit\n\n> \n\n[![NPM](https://img.shields.io/npm/v/ui-tool-kit.svg)](https://www.npmjs.com/package/ui-tool-kit) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)\n\n## Install\n\n```bash\nnpm install --save ui-tool-kit\n```\n\n## Usage\n\n```tsx\nimport * as React from 'react'\n\nimport MyComponent from 'ui-tool-kit'\n\nclass Example extends React.Component {\n  render () {\n    return (\n      <MyComponent />\n    )\n  }\n}\n```\n\n## License\n\nMIT © [](https://github.com/)\n"
+      readmeFilename: "README.md"
+      gitHead: "f2608e0825efe628f0c7bb4561792bf6e06246bb"
+      _id: "ui-tool-kit@1.0.0"
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+  2 debug pnpm:package-json: 
+    initial: 
+      name: "search-research"
+      version: "1.0.0"
+      description: ">"
+      author: ""
+      license: "MIT"
+      repository: 
+        type: "git"
+        url: "/search-research"
+      main: "dist/index.js"
+      module: "dist/index.es.js"
+      jsnext:main: "dist/index.es.js"
+      engines: 
+        node: ">=8"
+        npm: ">=5"
+      scripts: 
+        test: "cross-env CI=1 react-scripts-ts test --env=jsdom"
+        test:watch: "react-scripts-ts test --env=jsdom"
+        build: "rollup -c"
+        start: "rollup -c -w"
+        prepare: "npm run build"
+        predeploy: "cd example && npm install && npm run build"
+        deploy: "gh-pages -d example/build"
+      dependencies: 
+        ui-tool-kit: "file:../ui-tool-kit"
+      peerDependencies: 
+        prop-types: "^15.5.4"
+        react: "^15.0.0 || ^16.0.0"
+        react-dom: "^15.0.0 || ^16.0.0"
+      devDependencies: 
+        @svgr/rollup: "^2.4.1"
+        @types/jest: "^23.1.5"
+        @types/react: "^16.3.13"
+        @types/react-dom: "^16.0.5"
+        babel-core: "^6.26.3"
+        babel-runtime: "^6.26.0"
+        cross-env: "^5.1.4"
+        gh-pages: "^1.2.0"
+        react: "^16.4.1"
+        react-dom: "^16.4.1"
+        react-scripts-ts: "^2.16.0"
+        rollup: "^0.62.0"
+        rollup-plugin-babel: "^3.0.7"
+        rollup-plugin-commonjs: "^9.1.3"
+        rollup-plugin-node-resolve: "^3.3.0"
+        rollup-plugin-peer-deps-external: "^2.2.0"
+        rollup-plugin-postcss: "^1.6.2"
+        rollup-plugin-typescript2: "^0.17.0"
+        rollup-plugin-url: "^1.4.0"
+        typescript: "^2.8.3"
+      files: 
+        - "dist"
+      readme: "# search-research\n\n> \n\n[![NPM](https://img.shields.io/npm/v/search-research.svg)](https://www.npmjs.com/package/search-research) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)\n\n## Install\n\n```bash\nnpm install --save search-research\n```\n\n## Usage\n\n```tsx\nimport * as React from 'react'\n\nimport MyComponent from 'search-research'\n\nclass Example extends React.Component {\n  render () {\n    return (\n      <MyComponent />\n    )\n  }\n}\n```\n\n## License\n\nMIT © [](https://github.com/)\n"
+      readmeFilename: "README.md"
+      gitHead: "bfc9944048c786dfb6d5ecef835b65be6da82859"
+      _id: "search-research@1.0.0"
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+  3 info pnpm: 
+    message: "Performing headless installation"
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+  4 info pnpm: 
+    message: "Performing headless installation"
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+  5 debug pnpm:stats: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+    removed: 0
+  6 debug pnpm:stats: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+    removed: 0
+  7 debug pnpm:stage: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+    stage: "importing_started"
+  8 debug pnpm:stats: 
+    added: 0
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+  9 debug pnpm:stage: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit"
+    stage: "importing_done"
+  10 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\@svgr\\rollup\\2.4.1\\node_modules\\@svgr\\rollup"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\@svgr\\rollup"
+  11 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\@types\\jest\\23.3.14\\node_modules\\@types\\jest"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\@types\\jest"
+  12 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\@types\\react\\16.8.2\\node_modules\\@types\\react"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\@types\\react"
+  13 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\@types\\react-dom\\16.8.0\\node_modules\\@types\\react-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\@types\\react-dom"
+  14 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\@types\\react-router-dom\\4.3.1\\node_modules\\@types\\react-router-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\@types\\react-router-dom"
+  15 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\babel-core\\6.26.3\\node_modules\\babel-core"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\babel-core"
+  16 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\babel-runtime\\6.26.0\\node_modules\\babel-runtime"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\babel-runtime"
+  17 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\cross-env\\5.2.0\\node_modules\\cross-env"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\cross-env"
+  18 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\gh-pages\\1.2.0\\node_modules\\gh-pages"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\gh-pages"
+  19 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\react\\16.8.1\\node_modules\\react"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\react"
+  20 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\react-dom\\16.8.1\\node_modules\\react-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\react-dom"
+  21 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\react-scripts-ts\\2.17.0\\node_modules\\react-scripts-ts"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\react-scripts-ts"
+  22 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup\\0.62.0\\node_modules\\rollup"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup"
+  23 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-babel\\3.0.7\\node_modules\\rollup-plugin-babel"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-babel"
+  24 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-commonjs\\9.2.0\\node_modules\\rollup-plugin-commonjs"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-commonjs"
+  25 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-node-resolve\\3.4.0\\node_modules\\rollup-plugin-node-resolve"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-node-resolve"
+  26 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-peer-deps-external\\2.2.0\\node_modules\\rollup-plugin-peer-deps-external"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-peer-deps-external"
+  27 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-postcss\\1.6.3\\node_modules\\rollup-plugin-postcss"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-postcss"
+  28 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-typescript2\\0.17.2\\node_modules\\rollup-plugin-typescript2"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-typescript2"
+  29 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\rollup-plugin-url\\1.4.0\\node_modules\\rollup-plugin-url"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\rollup-plugin-url"
+  30 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\typescript\\2.9.2\\node_modules\\typescript"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\typescript"
+  31 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\react-page-layout\\0.9.8\\node_modules\\react-page-layout"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\react-page-layout"
+  32 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\.registry.npmjs.org\\react-router-dom\\4.3.1\\node_modules\\react-router-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\ui-tool-kit\\node_modules\\react-router-dom"
+  33 debug pnpm:stage: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+    stage: "importing_started"
+  34 debug pnpm:stats: 
+    added: 0
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+  35 debug pnpm:stage: 
+    prefix: "C:\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\search-research"
+    stage: "importing_done"
+  36 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\@svgr\\rollup\\2.4.1\\node_modules\\@svgr\\rollup"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\@svgr\\rollup"
+  37 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\@types\\jest\\23.3.14\\node_modules\\@types\\jest"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\@types\\jest"
+  38 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\@types\\react\\16.8.2\\node_modules\\@types\\react"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\@types\\react"
+  39 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\@types\\react-dom\\16.8.0\\node_modules\\@types\\react-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\@types\\react-dom"
+  40 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\babel-core\\6.26.3\\node_modules\\babel-core"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\babel-core"
+  41 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\babel-runtime\\6.26.0\\node_modules\\babel-runtime"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\babel-runtime"
+  42 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\cross-env\\5.2.0\\node_modules\\cross-env"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\cross-env"
+  43 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\gh-pages\\1.2.0\\node_modules\\gh-pages"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\gh-pages"
+  44 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\react\\16.8.1\\node_modules\\react"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\react"
+  45 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\react-dom\\16.8.1\\node_modules\\react-dom"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\react-dom"
+  46 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\react-scripts-ts\\2.17.0\\node_modules\\react-scripts-ts"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\react-scripts-ts"
+  47 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup\\0.62.0\\node_modules\\rollup"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup"
+  48 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-babel\\3.0.7\\node_modules\\rollup-plugin-babel"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-babel"
+  49 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-commonjs\\9.2.0\\node_modules\\rollup-plugin-commonjs"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-commonjs"
+  50 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-node-resolve\\3.4.0\\node_modules\\rollup-plugin-node-resolve"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-node-resolve"
+  51 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-peer-deps-external\\2.2.0\\node_modules\\rollup-plugin-peer-deps-external"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-peer-deps-external"
+  52 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-postcss\\1.6.3\\node_modules\\rollup-plugin-postcss"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-postcss"
+  53 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-typescript2\\0.17.2\\node_modules\\rollup-plugin-typescript2"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-typescript2"
+  54 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\rollup-plugin-url\\1.4.0\\node_modules\\rollup-plugin-url"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\rollup-plugin-url"
+  55 debug pnpm:link: 
+    target: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\.registry.npmjs.org\\typescript\\2.9.2\\node_modules\\typescript"
+    link: "C:\\Navin\\code\\synechron\\jpm\\search-research\\node_modules\\typescript"
+  56 error pnpm: 
+    message: 
+      errno: -4058
+      code: "ENOENT"
+      syscall: "open"
+      path: "C:\\Users\\sunny\\AppData\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit\\package.json"
+    err: 
+      name: "Error"
+      message: "ENOENT: no such file or directory, open 'C:\\Users\\sunny\\AppData\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit\\package.json'"
+      code: "ENOENT"
+      stack: "Error: ENOENT: no such file or directory, open 'C:\\Users\\sunny\\AppData\\Users\\sunny\\AppData\\Roaming\\npm\\pnpm-global\\node_modules\\ui-tool-kit\\package.json'"
